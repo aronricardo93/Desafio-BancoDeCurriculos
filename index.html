@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>.: JobsNET - Recrutamento & Seleção :. </title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo" href="index.html" width="115">
+        </div>
+    
+        <h1>Recrutamento e Seleção</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <a target="_blank" href=" http://api.whatsapp.com/send?phone=5571999609503">WhatsApp</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:aronricardo@hotmail.com">E-mail</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <h2>Banco de Talentos - Cadastro</h2>
+
+    <div class="form">
+        <h4>DADOS PESSOAIS</h4>
+        <hr />
+        <form action="" method="POST">
+            <label for="nome">Nome Completo</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="nome" type="text" autofocus required>
+            <label for="cargo">Cargo Pretendido</label>
+            <input id="cargo" type="text" size="10px">
+            <label for="datanascimento">Data de Nascimento</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="datanascimento" type="date" required>
+
+            <label for="estadoCivil">Estado Civil</label>
+            <select id="estadoCivil" name="estadoCivil">
+                <option value=""></option>
+                <option value="casadx">Casado(a)</option>
+                <option value="divorciadx">Divorciado(a)</option>
+                <option value="separadx">Separado(a)</option>
+                <option value="solteirx">Solteiro(a)</option>
+                <option value="uniaoEstavel">União Estável</option>
+                <option value="viuvx">Viúvo(a)</option>
+            </select>
+            <br>
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo" >
+                <option value=""></option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+            </select>
+            
+            <label for="logradouro">Endereço</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="logradouro" type="text" placeholder="ex. Nome da Rua, 56. Bloco 2, AP 301" size="40" required><br>
+
+            <label for="bairro">Bairro</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="bairro" type="text" size="20" required>
+
+            <label for="cidade">Cidade</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="cidade" type="text" size="10" required>
+            
+            <label for="uf">UF</label>
+            <label for="*" style="color: red;">*</label>
+            <select id="uf" name="uf" required>
+                <option value=""></option>
+                <option value="">AC</option>
+                <option value="">AL</option>
+                <option value="">AP</option>
+                <option value="">AM</option>
+                <option value="">BA</option>
+                <option value="">CE</option>
+                <option value="">DF</option>
+                <option value="">ES</option>
+                <option value="">GO</option>
+                <option value="">MA</option>
+                <option value="">MT</option>
+                <option value="">MS</option>
+                <option value="">MG</option>
+                <option value="">PA</option>
+                <option value="">PB</option>
+                <option value="">PR</option>
+                <option value="">PE</option>
+                <option value="">PI</option>
+                <option value="">RJ</option>
+                <option value="">RN</option>
+                <option value="">RS</option>
+                <option value="">RO</option>
+                <option value="">RR</option>
+                <option value="">SC</option>
+                <option value="">SP</option>
+                <option value="">SE</option>
+                <option value="">TO</option>
+            </select>
+            <br>
+            <label for="cep">CEP</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="cep" type="text" name="cep" maxlength="8" required>
+
+            <label for="tel1">Telefone Fixo 1</label>
+            <input id="tel1" type="tel" placeholder="ex. xxxx-xxxx">
+
+            <label for="tel2">Telefone Fixo 2</label>
+            <input id="tel2" type="tel" placeholder="ex. xxxx-xxxx">
+
+            <label for="cel">Celular</label>
+            <input id="cel" type="tel" placeholder="ex. 71 99999-9999">
+
+            <label for="contato">Contato</label>
+            <input type="text" size="35">
+            <br>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" size="40" placeholder="meunome@exemplo.com.br">
+
+            <h4>DOCUMENTOS</h4>
+            <hr>
+            <label for="identidade">Identidade</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="identidade" type="text" required>
+
+            <label for="cpf_digitado">CPF</label>
+            <label for="*" style="color: red;">*</label>
+            <input id="cpf_digitado" type="text" required><br>
+
+            <label for="veiculo">Possui Veículo</label>
+            <select id="veiculo" name="veiculo">
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            
+            <label for="habilitacao">Habilitação</label>
+            <select id="habilitacao" name="habilitacao">
+                <option value=""></option>
+                <option value="a">CNH A</option>
+                <option value="b">CNH B</option>
+                <option value="d">CNH D</option>
+                <option value="e">CNH E</option>
+                <option value="ab">CNH AB</option>
+                <option value="ad">CNH AD</option>
+                <option value="ae">CNH AE</option>
+            </select>
+            <div class="container page-header">
+                <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                </div>
+        
+                <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+                    <strong style="color:red;">Atenção!</strong> CPF informado inválido. 
+                </div>
+            </div>
+
+ <script>
+        jQuery(function ($) {
+            $(document).ready(function () {
+                $('#qual').hide();
+                $('#genero').change(function () {
+                    if ($('#genero').val() == 'Outra') {
+                        $('#qual').show();
+                    } else {
+                        $('#qual').hide();
+                    }
+                }
+                )
+            }
+            )
+        }
+        )
+    </script> 
+<button class="btnSend" type="submit">Enviar</button>        
+</form>  
+
+    <script src="./script.js"></script>
+</body>
+<div class="footer">
+    Copyright © 2021 JobsNET. Todos os direitos reservados
+</div>
+</html>
